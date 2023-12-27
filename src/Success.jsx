@@ -3,8 +3,13 @@ import Home from './Home';
 const Success = () => {
   
   setTimeout(function() {
+<<<<<<< HEAD
     window.location.replace('http://127.0.0.1:5173/home');
     localStorage.setItem("cart", []);
+=======
+    window.location.replace('https://superm-solution-vite-react18-usefetch.vercel.app/home');
+    localStorage.setItem(JSON.stringify("cart", []));
+>>>>>>> 9b5f56e0425478e34ce9ab30529077fc5ab671b0
   }, 7000);
   
   return (

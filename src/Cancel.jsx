@@ -4,7 +4,7 @@ const Cancel = () => {
     document.title = "Canceled Transaction";
 
   setTimeout(function() {
-    window.location.replace('http://127.0.0.1:5173/home');
+    window.location.replace('https://superm-solution-vite-react18-usefetch.vercel.app/home');
   }, 7000);
     
 
