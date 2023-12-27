@@ -114,7 +114,7 @@ function App() {
               }
             />
             <Route
-              path="/profile"
+              path="/success"
               element={<PrivateRoute element={<Success />} />}
             />
             <Route
@@ -122,7 +122,7 @@ function App() {
               element={<PrivateRoute element={<Cancel />} />}
             />
             <Route
-              path="/success"
+              path="/profile"
               element={<PrivateRoute element={<ProfileInfoDetails />} />}
             />
             <Route
