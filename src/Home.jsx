@@ -8,6 +8,13 @@ export default function Home() {
       setIsLoggedIn(true)
     }
   },[isLoggedIn])
+  useEffect(()=>{
+    if(localStorage.getItem("cart")){
+      localStorage.setItem("cart",JSON.stringify(localStorage.getItem("cart")))
+    }else{
+      localStorage.setItem("cart",[])
+    }
+  })
   return (
     <div className="home-layout">
       <div>
