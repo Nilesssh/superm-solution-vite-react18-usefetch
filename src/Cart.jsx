@@ -29,8 +29,8 @@ export default function Cart({ cart }) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "http://127.0.0.1:5173/success",
-          cancelUrl: "http://127.0.0.1:5173/cancel",
+          successUrl: "https://superm-solution-vite-react18-usefetch.vercel.app/success",
+          cancelUrl: "https://superm-solution-vite-react18-usefetch.vercel.app/cancel",
           customerEmail: email,
         })
         .then((response) => {
