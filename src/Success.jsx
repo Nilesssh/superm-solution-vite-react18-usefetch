@@ -4,7 +4,7 @@ const Success = () => {
   
   setTimeout(function() {
     window.location.replace('http://127.0.0.1:5173/home');
-    localStorage.setItem(JSON.stringify("cart", []));
+    localStorage.setItem("cart", []);
   }, 7000);
   
   return (
