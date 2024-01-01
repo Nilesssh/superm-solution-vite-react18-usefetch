@@ -4,17 +4,20 @@ import { Link } from "react-router-dom";
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   useEffect(()=>{
-    if(localStorage.getItem("loggedIn")){
-      setIsLoggedIn(true)
-    }
+    const auth = sessionStorage.getItem("loggedIn");
+    console.log(auth)
+    setIsLoggedIn(auth)
   },[isLoggedIn])
+
+
+
   useEffect(()=>{
     if(localStorage.getItem("cart")){
-      localStorage.setItem("cart",JSON.stringify(localStorage.getItem("cart")))
+      localStorage.setItem("cart", localStorage.getItem("cart")) 
     }else{
       localStorage.setItem("cart",[])
     }
-  })
+  },[])
   return (
     <div className="home-layout">
       <div>

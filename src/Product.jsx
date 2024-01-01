@@ -3,8 +3,9 @@ import Button from "./Button";
 
 export default function Product(props) {
   const { details } = props;
+  const {cart} = props;
 
-  const productFromCart = props.cart.find(
+  const productFromCart = cart.find(
     (product) => product.id === details.id
   );
   const quantity = productFromCart ? productFromCart.quantity : 0;
