@@ -29,8 +29,8 @@ export default function Cart({ cart }) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "http://127.0.0.1:5173/success",
-          cancelUrl: "http://127.0.0.1:5173/cancel",
+          successUrl: "https://65bde4f9a61dc056eb8f481b--beautiful-gumdrop-3d6142.netlify.app/success",
+          cancelUrl: "https://65bde4f9a61dc056eb8f481b--beautiful-gumdrop-3d6142.netlify.app/cancel",
           customerEmail: email,
         })
         .then((response) => {
