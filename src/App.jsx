@@ -21,6 +21,7 @@ function App() {
     let savedCart = [];
     try {
       savedCart = JSON.parse(localStorage.getItem("cart")) || [];
+      console.log(savedCart)
     } catch (error) {
       savedCart = [];
     }
